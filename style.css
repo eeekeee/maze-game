@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    height: 80%;
+    overflow: visible;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.intro {
+    display: none;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(52, 52, 52, 0.3), rgba(255, 255, 255, 1));
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.intro > button {
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: salmon;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer
+}
+
+.intro > p {
+    margin: 1rem;
+    font-size: 24px;
+    color: yellow;
+}
+
+
+.time {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    color: white;
+    font-size: 32px;
+    margin: 0 auto;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.starttimer {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.maze {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    background-color: #f1f2c2;
+}
+
+.maze > ul {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.maze > ul > li {
+    width: 100%;
+    height: 30px;
+}
+
+.maze > ul > li > ul{
+    display: flex;
+}
+
+.maze > ul > li > ul > li {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+
+#player {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.hide {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

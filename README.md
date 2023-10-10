@@ -35,6 +35,5 @@
 ```
 배경 음악 https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13048789&menuNo=200020
 카운트 음악 https://www.youtube.com/watch?v=CSJOElshehk&ab_channel=SoundEffects
-
-__기본적으로 무료 음악을 사용했지만, 문제가 될 시 바로 삭제조치 할 예정__
 ```
+__기본적으로 무료 음악을 사용했지만, 문제가 될 시 바로 삭제조치 할 예정입니다__
